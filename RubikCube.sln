@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubikCube.Tests", "RubikCube.Tests\RubikCube.Tests.csproj", "{7C210631-E394-4388-A743-1B779E4B9595}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C210631-E394-4388-A743-1B779E4B9595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C210631-E394-4388-A743-1B779E4B9595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C210631-E394-4388-A743-1B779E4B9595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C210631-E394-4388-A743-1B779E4B9595}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
