@@ -1,6 +1,3 @@
-using System.Numerics;
-using FluentAssertions;
-
 namespace RubikCube.Tests;
 
 public class CubeTests
@@ -19,14 +16,4 @@ public class CubeTests
         _cube.Location.Y.Should().Be(0);
         _cube.Location.Z.Should().Be(0);
     }
-}
-
-public class Cube
-{
-    public Cube()
-    {
-        Location = new Vector3();
-    }
-
-    public Vector3 Location { get; }
 }
