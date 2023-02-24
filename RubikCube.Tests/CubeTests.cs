@@ -16,4 +16,16 @@ public class CubeTests
         _cube.Location.Y.Should().Be(0);
         _cube.Location.Z.Should().Be(0);
     }
+
+    [Theory]
+    [InlineData(0, 0, 0)]
+    [InlineData(1, 0, 0)]
+    [InlineData(0, 1, 0)]
+    [InlineData(0, 0, 1)]
+    public void Move(int x, int y, int z)
+    {
+        var move = new Vector3(x, y, z);
+        _cube.Move(move);
+        _cube.Location.Should().Be(move);
+    }
 }
