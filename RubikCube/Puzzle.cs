@@ -10,4 +10,6 @@ public class Puzzle
     public int Width { get; }
     public int Height { get; }
     public int Depth { get; }
+
+    public IEnumerable<Cube> Cubes { get; }
 }
