@@ -2,9 +2,13 @@
 
 public class Cube
 {
-    public Cube()
+    public Cube() : this(0, 0, 0)
     {
-        Location = new Vector3();
+    }
+
+    public Cube(int x, int y, int z)
+    {
+        Location = new Vector3(x, y, z);
     }
 
     public Vector3 Location { get; private set; }

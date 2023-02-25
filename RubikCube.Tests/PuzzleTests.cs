@@ -53,9 +53,9 @@ public class PuzzleTests
         public void Puzzle_has_assigned_cube_locations_correctly_1st_row(int index, int x, int y, int z)
         {
             var cube = _puzzle.Cubes.ToList()[index - 1];
-            cube.Location.X.Should().Be(x + 400);
-            cube.Location.Y.Should().Be(y + 400);
-            cube.Location.Z.Should().Be(z + 400);
+            cube.Location.X.Should().Be(x);
+            cube.Location.Y.Should().Be(y);
+            cube.Location.Z.Should().Be(z);
         }
 
         [Theory]
@@ -71,9 +71,9 @@ public class PuzzleTests
         public void Puzzle_has_assigned_cube_locations_correctly_2nd_row(int index, int x, int y, int z)
         {
             var cube = _puzzle.Cubes.ToList()[index - 1];
-            cube.Location.X.Should().Be(x + 400);
-            cube.Location.Y.Should().Be(y + 400);
-            cube.Location.Z.Should().Be(z + 400);
+            cube.Location.X.Should().Be(x);
+            cube.Location.Y.Should().Be(y);
+            cube.Location.Z.Should().Be(z);
         }
 
         [Theory]
@@ -89,9 +89,9 @@ public class PuzzleTests
         public void Puzzle_has_assigned_cube_locations_correctly_3rd_row(int index, int x, int y, int z)
         {
             var cube = _puzzle.Cubes.ToList()[index - 1];
-            cube.Location.X.Should().Be(x + 400);
-            cube.Location.Y.Should().Be(y + 400);
-            cube.Location.Z.Should().Be(z + 400);
+            cube.Location.X.Should().Be(x);
+            cube.Location.Y.Should().Be(y);
+            cube.Location.Z.Should().Be(z);
         }
     }
 }
