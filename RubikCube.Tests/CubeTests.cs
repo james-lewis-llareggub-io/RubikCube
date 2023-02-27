@@ -6,7 +6,7 @@ public class CubeTests
 
     public CubeTests()
     {
-        _cube = new Cube();
+        _cube = new Cube(new FaceTagHolder());
     }
 
     [Fact]

@@ -2,16 +2,19 @@
 
 public class Cube : ICube
 {
-    public Cube() : this(0, 0, 0)
+    public Cube(IFaceTagHolder faceTagHolder) : this(faceTagHolder, 0, 0, 0)
     {
     }
 
-    public Cube(int x, int y, int z)
+    public Cube(IFaceTagHolder faceTagHolder, int x, int y, int z)
     {
         Location = new Vector3(x, y, z);
+        FaceTagHolder = faceTagHolder;
     }
 
     public Vector3 Location { get; private set; }
+
+    public IFaceTagHolder FaceTagHolder { get; }
 
     public void Move(Vector3 position)
     {

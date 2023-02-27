@@ -11,7 +11,7 @@ public class Puzzle : IPuzzle
         for (var z = 1; z > -2; z--)
         for (var y = -1; y < 2; y++)
         for (var x = -1; x < 2; x++)
-            _cubes.Add(new Cube(x, y, z));
+            _cubes.Add(new Cube(new FaceTagHolder(), x, y, z));
     }
 
     public int Width { get; }
