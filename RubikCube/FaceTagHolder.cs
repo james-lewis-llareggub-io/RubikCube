@@ -1,10 +1,10 @@
 ﻿namespace RubikCube;
 
-public class FaceFaceTagHolder : IFaceTagHolder
+public class FaceTagHolder : IFaceTagHolder
 {
     private readonly List<FaceTag> _tags;
 
-    public FaceFaceTagHolder()
+    public FaceTagHolder()
     {
         _tags = new List<FaceTag>();
     }
