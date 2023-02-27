@@ -2,5 +2,5 @@
 
 public interface ICubeFinder
 {
-    public IEnumerable<Cube> Find(IEnumerable<Cube> cubes, Face face);
+    public IEnumerable<ICube> Find(IEnumerable<ICube> cubes, Face face);
 }

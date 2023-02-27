@@ -2,7 +2,7 @@
 
 public class FaceTagHolderTests
 {
-    private readonly FaceTagHolder _faceTagHolder;
+    private readonly IFaceTagHolder _faceTagHolder;
     private readonly FaceTag _tag;
 
     protected FaceTagHolderTests()

@@ -2,7 +2,7 @@
 
 public class CubeFinder : ICubeFinder
 {
-    public IEnumerable<Cube> Find(IEnumerable<Cube> cubes, Face face)
+    public IEnumerable<ICube> Find(IEnumerable<ICube> cubes, Face face)
     {
         return face switch
         {
@@ -12,7 +12,7 @@ public class CubeFinder : ICubeFinder
             Face.Left => cubes.Where(x => (int)x.Location.X == -1).ToList(),
             Face.Down => cubes.Where(x => (int)x.Location.Y == 1).ToList(),
             Face.Up => cubes.Where(x => (int)x.Location.Y == -1).ToList(),
-            _ => new List<Cube>()
+            _ => new List<ICube>()
         };
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace RubikCube;
 
-public class Cube
+public class Cube : ICube
 {
     public Cube() : this(0, 0, 0)
     {

@@ -2,7 +2,7 @@ namespace RubikCube.Tests;
 
 public class CubeTests
 {
-    private readonly Cube _cube;
+    private readonly ICube _cube;
 
     public CubeTests()
     {
