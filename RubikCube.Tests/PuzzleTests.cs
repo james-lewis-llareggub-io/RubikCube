@@ -2,7 +2,7 @@
 
 public class PuzzleTests
 {
-    private readonly Puzzle _puzzle;
+    private readonly IPuzzle _puzzle;
 
     protected PuzzleTests()
     {

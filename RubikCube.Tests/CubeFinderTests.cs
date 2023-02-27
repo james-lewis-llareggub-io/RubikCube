@@ -3,7 +3,7 @@
 public class CubeFinderTests
 {
     private readonly ICubeFinder _cubeFinder;
-    private readonly Puzzle _puzzle;
+    private readonly IPuzzle _puzzle;
 
     public CubeFinderTests()
     {
