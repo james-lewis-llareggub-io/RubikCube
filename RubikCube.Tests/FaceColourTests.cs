@@ -17,9 +17,9 @@ public class FaceColourTests
 
     [Theory]
     [MemberData(nameof(Colors))]
-    void Test(KeyValuePair<Face, ConsoleColor> pair)   
+    private void Test(KeyValuePair<Face, ConsoleColor> pair)
     {
         var picker = new FaceColour();
-        picker.Pick(pair.Key).Should().Be(pair.Value);    
+        picker.Pick(pair.Key).Should().Be(pair.Value);
     }
 }
